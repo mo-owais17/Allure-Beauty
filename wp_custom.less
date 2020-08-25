@@ -1,0 +1,299 @@
+// Custom less for extending Pearl/weltpixel theme can be added in this file in the new theme
+// Here custom less for clients can be added
+.weltpixellighting {
+	color: black;
+}
+
+// Custom margin
+.custom-margin{
+    margin-top: 50px;
+}
+
+// Navigation
+.theme-pearl .page-wrapper .page-header.sticky-header:not(.page-header-v4) .logo {
+    margin-top: -12px !important;
+}
+.section-items.nav-sections-4.nav-sections-items {
+    padding-bottom: 20px;
+}
+.sticky-header-nav .section-items.nav-sections-4.nav-sections-items {
+    padding-bottom: 0px;
+}
+.sections.nav-sections-4.nav-sections {
+    padding-bottom: 0px;
+}
+
+.owl-carousel-products-category_products .owl-prev:hover, .owl-carousel-products-category_products .owl-next:hover {
+    border-radius: 50px !important;
+    background: #f7eb61 !important;
+}
+.owl-carousel-products-new_products .owl-prev:hover, .owl-carousel-products-new_products .owl-next:hover {
+    border-radius: 50px !important;
+    background: #f7eb61 !important;
+}
+
+.owl-item img.product-image-photo.owl-lazy{
+    transition: 0.25s;
+    transition-timing-function: ease-out;
+    transform: translateY(0);
+}
+.owl-item img.product-image-photo.owl-lazy:hover{
+    -moz-transform: translate(-2px, -2px);
+    -ms-transform: translate(-2px, -2px);
+    -o-transform: translate(-2px, -2px);
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(0px, -5px);
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+.main-hero .owl-stage-outer {
+    padding: 0px;
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+	left: 0 !important;
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev:hover{
+	left: 0 !important;
+}
+.owl-carousel .owl-controls .owl-nav .owl-next {
+	right: 0 !important;
+}
+.new_products .block-title {
+    border-bottom: none; //1px solid
+    text-align: center;
+    position: relative;
+}
+.new_products a.see-all {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+// Brand Slider Main
+.container-v15.brand-slider-main {
+    filter: grayscale(100%);
+}
+
+//Product Slider Dots
+.owl-theme.owl-carousel .owl-controls .owl-dot span {
+    border: 1px solid #eaeaea !important;
+    background: #eaeaea !important;
+}
+.owl-theme.owl-carousel .owl-controls .owl-dot.active span {
+    background: #f4e975 !important;
+    border: 1px solid #f4e975 !important;
+}
+
+// Image with text left
+.spa {
+    background-color: #fbe9f5;
+    padding: 50px 0;
+}
+.spa-cont {
+    z-index: 1;
+}
+.main-row {
+    display: flex;
+}
+.ver-align {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.spa-cont:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    display: block;
+    width: 50%;
+    height: 75%;
+    transform: translateY(-50%);
+    right: -15px;
+    left: unset;
+    background: #f1d4f0;
+}
+.spa-right .spa-cont:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    display: block;
+    width: 50%;
+    height: 75%;
+    transform: translateY(-50%);
+    right: unset;
+    left: -15px;
+    background: #f1d4f0;
+}
+.spa h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.spa .n-btn {
+    margin: 0 auto;
+}
+.n-btn {
+    color: #fff !important;
+    text-decoration: none !important;
+    box-shadow: 3px 3px 0 #ff1300;
+    background: linear-gradient(to right, #ff1300 0%, #000 0%);
+    display: inline-block;
+    margin: 15px 0 0;
+    padding: 11px 14px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.n-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #000 0%, #ff1300 80%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+.n-btn:hover:before {
+    opacity: 1;
+}
+.n-btn:hover {
+    opacity: 1 !important;
+}
+// .spa .n-btn2 {
+//     margin: 0 auto;
+// }
+// a.n-btn.n-btn2:hover {
+//     background: #1e667a;
+//     color: #fff !important;
+//     opacity: 1 !important;
+// }
+// .n-btn {
+//     color: #000 !important;
+//     text-decoration: none !important;
+//     background-color: #58ddff;
+//     box-shadow: 3px 3px 0 #f5ea76;
+//     display: inline-block;
+//     margin: 15px 0 0;
+//     padding: 11px 30px;
+//     font-size: 15px;
+//     font-weight: 600;
+// }
+// .n-btn2 {
+//     background: linear-gradient(to right, rgb(115, 210, 230) 0%, rgb(247, 235, 97) 0%);
+//     line-height: 1rem;
+//     transition: all .15s ease;
+//     /* font-family: CeraStencilPRO; */
+//     /* font-weight: 500; */
+//     font-size: 15px;
+//     background-color: #f5ea77;
+//     color: #000;
+//     border: none;
+//     box-shadow: 3px 3px 0 #73d2e6;
+//     border-radius: 0;
+//     outline: 0;
+//     padding: 13px 0;
+//     height: auto;
+//     min-width: 200px; //165px
+//     text-align: center;
+// }
+.container-v15 .c-live-text__outer .c-live-text {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .spa .main-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .spa-right .main-row{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+//Quick View
+.block-content-quickcart .quickcart-top {
+    background: #73D2E6 !important;
+}
+
+//Add to Cart Button
+button#product-addtocart-button {
+    background: linear-gradient(to right, #73d2e6 0%, #f7eb61 0%);
+    line-height: 1rem;
+    transition: all .15s ease;
+    font-size: 15px;
+    background-color: #f5ea77;
+    color: #000;
+    border: none;
+    box-shadow: 3px 3px 0 #73d2e6;
+    border-radius: 0;
+    outline: 0;
+    padding: 13px 0;
+    height: auto;
+    min-width: 175px;
+    text-align: center;
+}
+.theme-pearl.catalog-product-view .box-tocart .field.qty select {
+    padding: 13px;
+}
+.theme-pearl.store-view-default .block .block-content .products-grid button.action.primary, .theme-pearl.store-view-default button.action.primary {
+    background: linear-gradient(to right, #73d2e6 0%, #f7eb61 0%);
+    line-height: 1rem;
+    transition: all .15s ease;
+    font-size: 15px;
+    background-color: #f5ea77;
+    color: #000;
+    border: none;
+    box-shadow: 3px 3px 0 #73d2e6;
+    border-radius: 0;
+    outline: 0;
+    padding: 13px 0;
+    height: auto;
+    min-width: 175px;
+    text-align: center;
+}
+
+// Contact Page
+.contact-v2 .block-container .container-wpx-contact i:hover {
+    color: #73d2e6;
+}
+
+// Footer
+.footer-v3-list a {
+    color: #fff !important;
+}
+.footer-v3 p, .footer-v3 a {
+    color: #fff;
+}
+.footer-v3{
+    padding-bottom: 60px !important;
+}
+.footer-v2 .block.newsletter input {
+    margin-right: 60px !important;
+}
+
+.img-radius {
+    border-radius: 15px;
+}
+
+.main-hero img {
+    border-radius: 15px;
+}
+
+.btn-main {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.header .block-search .input-text {
+    border-radius: 15px;
+}
