@@ -138,8 +138,9 @@
 .n-btn {
     color: #fff !important;
     text-decoration: none !important;
-    box-shadow: 3px 3px 0 #ff1300;
-    background: linear-gradient(to right, #ff1300 0%, #000 0%);
+    box-shadow: 3px 3px 0 #00C3CB;  //Changed (Rumi)
+    background: linear-gradient(to right, #ff1300 0%, #00C3CB 0%);     //Changed (Rumi)
+    border: 1px solid #FFFFFF;      // Added (Rumi)
     display: inline-block;
     margin: 15px 0 0;
     padding: 11px 14px;
@@ -157,7 +158,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, #000 0%, #ff1300 80%);
+    background: linear-gradient(to right, #370F6F 0%, #00C3CB 80%);      //Changed (Rumi)
     opacity: 0;
     transition: opacity 0.4s ease;
     z-index: -1;
@@ -232,7 +233,7 @@ button#product-addtocart-button {
     transition: all .15s ease;
     font-size: 15px;
     background-color: #f5ea77;
-    color: #000;
+    color: #FFFFFF;
     border: none;
     box-shadow: 3px 3px 0 #73d2e6;
     border-radius: 0;
@@ -246,14 +247,13 @@ button#product-addtocart-button {
     padding: 13px;
 }
 .theme-pearl.store-view-default .block .block-content .products-grid button.action.primary, .theme-pearl.store-view-default button.action.primary {
-    background: linear-gradient(to right, #73d2e6 0%, #f7eb61 0%);
+    background: linear-gradient(to right, #00C3CB 0%, #00C3CB 0%);
     line-height: 1rem;
     transition: all .15s ease;
     font-size: 15px;
     background-color: #f5ea77;
-    color: #000;
-    border: none;
-    box-shadow: 3px 3px 0 #73d2e6;
+    border: 1px solid #FFFFFF !important;
+    box-shadow: 3px 3px 0 #00C3CB;
     border-radius: 0;
     outline: 0;
     padding: 13px 0;
@@ -261,6 +261,33 @@ button#product-addtocart-button {
     min-width: 175px;
     text-align: center;
 }
+
+// <<<<<<<<<<<<<<<<<<<<<<< NEW >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+.theme-pearl.store-view-default .block .block-content .products-grid button.action.primary, .theme-pearl.store-view-default button.action.primary:hover {
+    content: "";
+    z-index: -1;
+
+    position: inherit;
+    background: linear-gradient(to right, #370F6F 0%, #00C3CB 80%); 
+    line-height: 1rem;
+    transition: all .15s ease;
+    font-size: 15px;
+    border: 1px solid #FFFFFF !important;
+    box-shadow: 3px 3px 0 #00C3CB;
+    border-radius: 0;
+    outline: 0;
+    padding: 13px 0;
+    height: auto;
+    min-width: 175px;
+    text-align: center;
+}
+// .theme-pearl.store-view-default .block .block-content .products-grid button.action.primary.tocart, .theme-pearl.store-view-default button.action.primary.tocart:before {
+//     opacity: 1;
+// }
+// .theme-pearl.store-view-default .block .block-content .products-grid button.action.primary.tocart, .theme-pearl.store-view-default button.action.primary.tocart:hover {
+//     opacity: 1 !important;
+// }
+// ____________________________________________________________
 
 // Contact Page
 .contact-v2 .block-container .container-wpx-contact i:hover {
